@@ -1,0 +1,16 @@
+app_name: "archerysec"
+replica_count: 1
+
+image: "archerysec/archerysec:latest"
+imagePullPolicy: IfNotPresent
+
+resources:
+  limits:
+    cpu: '1'
+    memory: 3Gi
+  requests:
+    cpu: 200m
+    memory: 1Gi
+  storage_requests: 3Gi
+
+app_host: ""
