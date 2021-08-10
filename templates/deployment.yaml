@@ -57,6 +57,7 @@ spec:
       volumes:
         - name: {{ .Values.app_name }}-data
           persistentVolumeClaim:
-            claimName: {{ .Values.app_name }}-data        
+            claimName: {{ .Values.app_name }}-data      
+      serviceAccountName: {{ .Values.service_account_name }}
 
   

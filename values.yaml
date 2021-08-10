@@ -1,7 +1,7 @@
 app_name: "archerysec"
 replica_count: 1
 
-image: "archerysec/archerysec:latest"
+image: "archerysec/archerysec:alpine"
 imagePullPolicy: IfNotPresent
 
 resources:
@@ -13,4 +13,5 @@ resources:
     memory: 1Gi
   storage_requests: 3Gi
 
+service_account_name: archerysec-sa
 app_host: ""
